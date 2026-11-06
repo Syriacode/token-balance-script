@@ -14,6 +14,12 @@ npm ci
 npm test
 ```
 
+### Hooks
+
+- A PostToolUse hook (.claude/hooks/format-on-edit.mjs) runs Prettier on every file you write or edit. Don't format
+  files by hand or run Prettier yourself.
+- If the hook reports an error, fix the syntax error it names before doing anything else.
+
 ## Plan
 
 - `GUIDE.md` holds the step-by-step plan once it's added.
