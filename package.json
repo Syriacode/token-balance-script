@@ -2,9 +2,11 @@
   "name": "token-balance-script",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -13,9 +15,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Syriacode/token-balance-script/issues"
   },
-  "homepage": "https://github.com/Syriacode/token-balance-script#readme"
+  "homepage": "https://github.com/Syriacode/token-balance-script#readme",
+  "dependencies": {
+    "viem": "^2.57.16"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2"
+  }
 }
