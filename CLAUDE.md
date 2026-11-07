@@ -11,7 +11,13 @@ Language: typescript
 
 ```bash
 npm ci
+npm run format:check
+npm run typecheck
 npm test
+
+# The first command needs Anvil (for example: anvil --fork-url https://ethereum-rpc.publicnode.com)
+node src/main.ts info 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+node src/main.ts --rpc https://ethereum-rpc.publicnode.com transfers 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640 --blocks 20
 ```
 
 ### Hooks
